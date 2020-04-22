@@ -1,0 +1,7 @@
+name = "secant"
+uuid = "a91496ac-950c-4426-94f4-fe03bf1cd096"
+authors = ["jurgi "]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
