@@ -1,7 +1,8 @@
 module secant
 
+"Returns root of given function using secant method"
+
 function my_secant(f, x1, x2, eps)
-    n = 0
     xm = 0
     x0 = 0
     c = 0
@@ -13,7 +14,6 @@ function my_secant(f, x1, x2, eps)
 
             x1 = x2
             x2 = x0
-            n = n + 1
 
             if(c == 0)
                 break
@@ -25,8 +25,7 @@ function my_secant(f, x1, x2, eps)
                 break
             end
         end
-        println("Root: ", x0)
-        println("No of iterations: ", n)
+        return x0
     else println("Can not find a root")
     end
 end
